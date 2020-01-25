@@ -1,5 +1,6 @@
 body {
     
+    height: 100%;
     
 }
 
@@ -15,20 +16,21 @@ body {
 .cardCSS{
     
     flex: 0 0 30%;
-    border: 1px solid rgb(238,238,238);
+
+
     border-radius: 2px;
     margin: 2px;
+
     display: flex;
     flex-direction: column;
-    
-    
-
+    align-content: flex-end;
 }
 
 /* header inside he cardCSS */
 header{
+    color: rgb(154,154,154);
     background-color: rgb(238,238,238);
-    border: 1px solid rgb(238,238,238);
+    border: 1px solid rgb(102, 75, 75);
     border-radius: 2px;
     text-align: center;
 }
@@ -37,28 +39,30 @@ header{
 .cardCSS .cardContent {
     
     flex: 1 1 auto;
-    text-align: justify;
-    text-justify: auto;
-    text-align: center;
-    
-    
-    
 }
 
-.cardText {
+.cardContent {
+    border: 1px solid rgb(238,238,238);
+}
+
+/* .cardText {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     
+    
 
-}
+} */
 
-.cardText p {
-
-    margin-top: 0;
-    margin-bottom: 0;
+ p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
     
 
 }
@@ -68,7 +72,7 @@ header{
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top: 10px;
+     margin: 10px;
  }
 
  /* image inside the div */
