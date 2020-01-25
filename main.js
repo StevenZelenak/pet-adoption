@@ -55,7 +55,7 @@ const outputDom = (divId, petStr) =>{
         selectedDiv.innerHTML = petStr;
 }
 
-
+//capitalizes the first letter of a word
 const capitalize = (word) =>{
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
@@ -70,32 +70,44 @@ const petLoop = (arr) => {
             if(arr[i].type === 'dog')
             {
                 domString += `<div class = "cardCSS">`;
-                domString += `<h4 class = "topOfCard">${arr[i].name}</h4> `;
-                domString += `<img src=${arr[i].imageUrl} alt="">`;
+                domString += `<header>${arr[i].name}</header> `;
+                domString += `<div class = "cardContent">`;
+                domString += `<div class = "imgDiv"><img src=${arr[i].imageUrl} alt=""></div>`;
+                domString += `<div class = "cardText">`;
                 domString += `<p>${arr[i].color}</p> `;
                 domString += `<p>${arr[i].specialSkill}</p> `;
-                domString += `<h4 class = "dogCard">${capitalize(arr[i].type)}</h4> `;
+                domString += `</div>`;
+                domString += `</div>`;
+                domString += `<footer class ="dogCard">${capitalize(arr[i].type)}</footer> `;
                 domString += `</div> `;
             }
             else if(arr[i].type === 'cat')
             {
-                domString += `<div class = "cardCSS">`;
-                domString += `<h4 class = "topOfCard">${arr[i].name}</h4> `;
-                domString += `<img src=${arr[i].imageUrl} alt="">`;
-                domString += `<p>${arr[i].color}</p> `;
-                domString += `<p>${arr[i].specialSkill}</p> `;
-                domString += `<h4 class = "catCard">${capitalize(arr[i].type)}</h4> `;
-                domString += `</div> `;
+              domString += `<div class = "cardCSS">`;
+              domString += `<header>${arr[i].name}</header> `;
+              domString += `<div class = "cardContent">`;
+              domString += `<div class = "imgDiv"><img src=${arr[i].imageUrl} alt=""></div>`;
+              domString += `<div class = "cardText">`;
+              domString += `<p>${arr[i].color}</p> `;
+              domString += `<p>${arr[i].specialSkill}</p> `;
+              domString += `</div>`;
+              domString += `</div>`;
+              domString += `<footer class = "catCard">${capitalize(arr[i].type)}</footer> `;
+              domString += `</div> `;
             }
             else if(arr[i].type === 'dino')
             {
-                domString += `<div class = "cardCSS">`;
-                domString += `<h4 class = "topOfCard">${arr[i].name}</h4> `;
-                domString += `<img src=${arr[i].imageUrl} alt="">`;
-                domString += `<p>${arr[i].color}</p> `;
-                domString += `<p>${arr[i].specialSkill}</p> `;
-                domString += `<h4 class = "dinoCard">${capitalize(arr[i].type)}</h4> `;
-                domString += `</div> `;
+              domString += `<div class = "cardCSS">`;
+              domString += `<header>${arr[i].name}</header> `;
+              domString += `<div class = "cardContent">`;
+              domString += `<div class = "imgDiv"><img src=${arr[i].imageUrl} alt=""></div>`;
+              domString += `<div class = "cardText">`;
+              domString += `<p>${arr[i].color}</p> `;
+              domString += `<p>${arr[i].specialSkill}</p> `;
+              domString += `</div>`;
+              domString += `</div>`;
+              domString += `<footer class = "dinoCard" >${capitalize(arr[i].type)}</footer> `;
+              domString += `</div> `;
             }
         }
 

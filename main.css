@@ -1,15 +1,114 @@
 body {
-    background-color: rgb(255, 255, 255);
+    
+    
 }
 
+/* container that card are in */
+.flexContainer{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     
+}
+
+/* the card itself */
+.cardCSS{
+    
+    flex: 0 0 30%;
+    border: 1px solid rgb(238,238,238);
+    border-radius: 2px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+
+/* header inside he cardCSS */
+header{
+    background-color: rgb(238,238,238);
+    border: 1px solid rgb(238,238,238);
+    border-radius: 2px;
+    text-align: center;
+}
+
+/*cardcontent div inside the cardcss*/
+.cardCSS .cardContent {
+    
+    flex: 1 1 auto;
+    text-align: justify;
+    text-justify: auto;
+    text-align: center;
+    
+    
+    
+}
+
+.cardText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+
+}
+
+.cardText p {
+
+    margin-top: 0;
+    margin-bottom: 0;
+    
+
+}
+
+/* div around the image */
+ .imgDiv {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+ }
+
+ /* image inside the div */
+ .imgDiv img {
+     width: 150px;
+     height: 150px;
+     border-radius: 5px;
+ }
+
+ /* footer inside cardCSS but outside csrdContent */
+footer {
+    
+    background-color: rgb(238,238,238);
+    border: 1px solid rgb(238,238,238);
+    border-radius: 2px;
+    text-align: center;
+    /* margin-top: 0; */
+
+}
+
+
+
+
+
 .catCard {
-    border: 2px red solid;
+    color: rgb(25,101,192);
+    border: 1px solid rgb(188,232,241);
+    background-color: rgb(218,237,247);
 }
 
 .dinoCard {
-    border: 4px green solid;
+    border: 1px solid rgb(252,243,226);
+    background-color: rgb(253,248,227);
+    color: rgb(255,190,97);
+   
 }
 
 .dogCard {
-    border: 6px blue solid;
+    
+    border: 1px solid rgb(215,233,198);
+    background-color: rgb(223,240,216);
+    color: rgb(64,146,67);
 }
