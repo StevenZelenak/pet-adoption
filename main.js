@@ -79,5 +79,42 @@ const petLoop = (arr) => {
   outputDom('cardLocation', domString);
 };
 
+const checkType = (e) => {
 
-petLoop(pets);
+  const idButton = e.target.id;
+  if (idButton === 'all') {
+    petLoop(pets);
+
+  } else {
+
+    const animals = [];
+
+    for (let i = 0; i < pets.length; i++) {
+      if (pets[i].type === idButton) {
+        animals.push(pets[i]);
+      }
+
+    }
+
+    petLoop(animals);
+
+  }
+
+
+}
+
+const event = () => {
+
+  document.getElementById('dino').addEventListener('click', checkType);
+  document.getElementById('cat').addEventListener('click', checkType);
+  document.getElementById('dog').addEventListener('click', checkType);
+  document.getElementById('all').addEventListener('click', checkType);
+}
+
+
+const init = () => {
+  petLoop(pets);
+  event();
+}
+
+init();

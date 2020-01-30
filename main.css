@@ -93,7 +93,32 @@ footer {
 
 }
 
+#buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(238,238,238);
+    width: 90.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
 
+#dino {
+    margin: 10px;
+}
+
+#cat {
+    margin: 10px;
+}
+
+#dog {
+    margin: 10px;
+}
+
+#all {
+    margin: 10px;
+}
 
 
 
