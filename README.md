@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is an exploration into the Flebox grid system.
+This project is an exploration into the Flexbox grid system.
 We used Flexbox cards to display a collection of pets you can adopt.
 We also gave out users the ability to filter the pets by animal type.
 
